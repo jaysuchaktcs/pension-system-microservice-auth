@@ -6,8 +6,7 @@ module.exports = async function isAuthenticated(req, res, next) {
         if (err) {
             return res.send({
                 sucess: 0,
-                err: 'Unauthorized',
-                err
+                err: 'Unauthorized'
             });
         } else {
             req.user = user;
